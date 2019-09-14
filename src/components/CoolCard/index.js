@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Image from '../Image';
 import { Typography } from '@material-ui/core';
 
 
@@ -17,7 +18,7 @@ export default function CoolCard(props) {
 
     return (
         <Card className={classes.card}>
-            <img height='300' src={props.img} />
+            <Image height='300' src={props.src} />
             <CardContent>
                 <Typography>
                     name: {props.name}
